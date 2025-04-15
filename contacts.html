@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Контакти | CleanWindows</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body {
+      height: 100%;
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100 text-gray-800">
+
+  <!-- Навигация -->
+  <nav class="bg-blue-600 text-white p-4 flex justify-between items-center shadow">
+    <h1 class="text-xl font-bold">CleanWindows</h1>
+    <ul class="flex space-x-6">
+      <li><a href="./index.html" class="hover:underline">Начало</a></li>
+      <li><a href="#" class="hover:underline">Резервация</a></li>
+      <li><a href="#" class="hover:underline">Вход</a></li>
+      <li><a href="./contacts.html" class="hover:underline">Контакти</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+    <header class="bg-white py-16 px-6 text-center shadow">
+      <h2 class="text-3xl font-bold mb-4">Свържи се с нас</h2>
+      <p class="text-lg mb-6">Имате въпрос? Изпратете ни съобщение и ще ви отговорим възможно най-скоро!</p>
+    </header>
+
+    <!-- Contact Form -->
+    <section class="py-12 px-6 max-w-2xl mx-auto">
+      <form class="bg-white p-8 rounded shadow space-y-6">
+        <div>
+          <label for="name" class="block mb-2 font-semibold">Име</label>
+          <input type="text" id="name" name="name" required
+                 class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+
+        <div>
+          <label for="email" class="block mb-2 font-semibold">Имейл</label>
+          <input type="email" id="email" name="email" required
+                 class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+
+        <div>
+          <label for="message" class="block mb-2 font-semibold">Съобщение</label>
+          <textarea id="message" name="message" rows="5" required
+                    class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+        </div>
+
+        <button type="submit"
+                class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">
+          Изпрати съобщение
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white text-center p-4">
+    © 2025 CleanWindows. Всички права запазени.
+  </footer>
+
+</body>
+</html>
