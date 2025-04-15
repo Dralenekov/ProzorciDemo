@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>График | CleanWindows</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body {
+      height: 100%;
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100 text-gray-800">
+
+  <!-- Навигация -->
+  <nav class="bg-blue-600 text-white p-4 flex justify-between items-center shadow">
+    <h1 class="text-xl font-bold">CleanWindows</h1>
+    <ul class="flex space-x-6">
+      <li><a href="index.html" class="hover:underline">Начало</a></li>
+      <li><a href="contacts.html" class="hover:underline">Контакти</a></li>
+      <li><a href="#" class="hover:underline">Вход</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+    <header class="bg-white py-12 px-6 text-center shadow">
+      <h2 class="text-3xl font-bold mb-4">График за почистване</h2>
+      <p class="text-lg">Разгледайте предстоящите локации и дати за почистване.</p>
+    </header>
+
+    <!-- График таблица -->
+    <section class="py-10 px-6 max-w-6xl mx-auto">
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white rounded shadow">
+          <thead class="bg-blue-600 text-white">
+            <tr>
+              <th class="text-left py-3 px-4">Дата</th>
+              <th class="text-left py-3 px-4">Локация</th>
+              <th class="text-left py-3 px-4">Час</th>
+              <th class="text-left py-3 px-4">Екип</th>
+              <th class="text-left py-3 px-4">Статус</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-700">
+            <tr class="border-b hover:bg-gray-100">
+              <td class="py-3 px-4">15 април 2025</td>
+              <td class="py-3 px-4">София, ж.к. Люлин</td>
+              <td class="py-3 px-4">09:00 - 11:00</td>
+              <td class="py-3 px-4">Екип 1</td>
+              <td class="py-3 px-4"><span class="bg-green-200 text-green-800 px-2 py-1 rounded text-sm">Потвърдено</span></td>
+            </tr>
+            <tr class="border-b hover:bg-gray-100">
+              <td class="py-3 px-4">16 април 2025</td>
+              <td class="py-3 px-4">Пловдив, Център</td>
+              <td class="py-3 px-4">13:00 - 15:00</td>
+              <td class="py-3 px-4">Екип 2</td>
+              <td class="py-3 px-4"><span class="bg-yellow-200 text-yellow-800 px-2 py-1 rounded text-sm">Очаква се</span></td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="py-3 px-4">17 април 2025</td>
+              <td class="py-3 px-4">Варна, Младост</td>
+              <td class="py-3 px-4">10:00 - 12:00</td>
+              <td class="py-3 px-4">Екип 3</td>
+              <td class="py-3 px-4"><span class="bg-red-200 text-red-800 px-2 py-1 rounded text-sm">Отменено</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white text-center p-4">
+    © 2025 CleanWindows. Всички права запазени.
+  </footer>
+
+</body>
+</html>
